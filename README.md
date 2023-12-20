@@ -1,1 +1,2 @@
 # AlgoX
+Name: Tushar Kanda 
