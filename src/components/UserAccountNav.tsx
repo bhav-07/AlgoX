@@ -8,7 +8,6 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
-import { Button } from "./ui/button";
 import { User } from "next-auth";
 import { signOut } from "next-auth/react";
 import { LogOut } from "lucide-react";
