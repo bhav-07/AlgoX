@@ -40,7 +40,23 @@ model User {
   name          String?
   email         String?   @unique
   emailVerified DateTime?
+  isAdmin      Boolean   @default(false)
   image    String?
+  cfUsername String?
+  cfRating Int?
+  lcUsername String?
   accounts Account[]
   sessions Session[]
 }
+
+model Problem{ 
+  id String @id @default(cuid())
+  name String
+  description String
+  difficulty String
+  testcase String
+  tags String[]
+  authorId String
+  createdAt DateTime @default(now())
+}
+
